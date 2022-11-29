@@ -2,8 +2,24 @@ function removeTransition(e) {
     if (e.propertyName !== 'transform') return;
     e.target.classList.remove('playing');
 
-    document.getElementById('image')
+    document.getElementById('imageDuck')
     .style.display = "none";
+
+    document.getElementById('imagePig')
+    .style.display = "none";
+
+    document.getElementById('imageHorse')
+    .style.display = "none";
+
+    document.getElementById('imageCow')
+    .style.display = "none";
+
+    document.getElementById('imageGoat')
+    .style.display = "none";
+
+    document.getElementById('imageChicken')
+    .style.display = "none";
+
   }
 
   function playSound(e) {
@@ -14,17 +30,11 @@ function removeTransition(e) {
     key.classList.add('playing');
     audio.currentTime = 0;
     audio.play();
-
-    // document.getElementById('image')
-    // .style.display = "block";
   }
 
   function showImage(e) {
     const picture = document.querySelector(`img[data-key="${e.keyCode}"]`);
-    const key = document.querySelector(`div[data-key="${e.keyCode}"]`);
-    
-    document.getElementById('image')
-    .style.display = "block";
+    picture.style.display = "block";
   }
 
   const keys = Array.from(document.querySelectorAll('.key'));
