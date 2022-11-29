@@ -1,0 +1,56 @@
+html {
+    font-size: 10px;
+    background: url('https://static.vecteezy.com/system/resources/previews/000/692/349/original/farm-fields-in-minimal-and-flat-art-work-style-vector.jpg');
+    background-size: cover;
+  }
+
+  #image {
+    display: none;
+}
+  
+
+  
+  .instruments {
+    margin-top: 10%;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .key {
+    border: 2px solid black;
+    border-radius: .5rem;
+    margin: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem .5rem;
+    transition: all .2s ease;
+    width: 10rem;
+    text-align: center;
+    color: white;
+    background: rgba(0,0,0,0.4);
+    text-shadow: 0 0 .5rem black;
+  }
+
+  #D {
+    transition: all .2s ease;
+    background: url('https://culverduck.com/wp-content/uploads/2020/11/duck-animate-1-500x500.png') bottom center;
+  }
+  
+  .playing {
+    transform: scale(1.1);
+    border-color: #ffc600;
+    box-shadow: 0 0 1rem #ffc600;
+  }
+  
+  kbd {
+    display: block;
+    font-size: 4rem;
+  }
+  
+  .sound {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    color: #ffc600;
+  }
